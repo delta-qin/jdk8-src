@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.util.TreeSet</OriginalElement>
+  <nodes>
+    <node x="505.1173913043478" y="342.0">java.lang.Cloneable</node>
+    <node x="684.1173913043478" y="342.0">java.util.SortedSet</node>
+    <node x="650.0559782608696" y="114.0">java.util.Collection</node>
+    <node x="863.1173913043478" y="342.0">java.util.AbstractSet</node>
+    <node x="564.9309782608696" y="228.0">java.util.Set</node>
+    <node x="139.93097826086955" y="506.0">java.util.HashMap</node>
+    <node x="668.1173913043478" y="506.0">java.util.NavigableSet</node>
+    <node x="652.4278985507245" y="640.0">java.util.TreeSet</node>
+    <node x="661.0559782608696" y="0.0">java.lang.Iterable</node>
+    <node x="46.00815217391295" y="342.0">java.io.Serializable</node>
+    <node x="453.93097826086955" y="506.0">java.util.HashSet</node>
+    <node x="870.1173913043478" y="228.0">java.util.AbstractCollection</node>
+    <node x="296.93097826086955" y="506.0">java.util.TreeMap</node>
+    <node x="265.34148550724626" y="342.0">java.util.Map</node>
+    <node x="171.4528985507245" y="640.0">java.util.LinkedHashSet</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.HashSet" target="java.util.Set">
+      <point x="-17.125" y="-32.0" />
+      <point x="505.30597826086955" y="446.0" />
+      <point x="494.6173913043478" y="446.0" />
+      <point x="494.6173913043478" y="322.0" />
+      <point x="600.1809782608696" y="322.0" />
+      <point x="-11.75" y="32.0" />
+    </edge>
+    <edge source="java.util.HashMap" target="java.util.Map">
+      <point x="0.0" y="-32.0" />
+      <point x="208.43097826086955" y="446.0" />
+      <point x="288.84148550724626" y="446.0" />
+      <point x="-23.5" y="32.0" />
+    </edge>
+    <edge source="java.util.LinkedHashSet" target="java.lang.Cloneable">
+      <point x="75.75" y="-32.0" />
+      <point x="348.2028985507245" y="620.0" />
+      <point x="613.9798913043478" y="620.0" />
+      <point x="613.9798913043478" y="476.0" />
+      <point x="616.4173913043478" y="476.0" />
+      <point x="31.799999999999955" y="32.0" />
+    </edge>
+    <edge source="java.util.TreeMap" target="java.util.Map">
+      <point x="0.0" y="-32.0" />
+      <point x="365.43097826086955" y="446.0" />
+      <point x="335.84148550724626" y="446.0" />
+      <point x="23.5" y="32.0" />
+    </edge>
+    <edge source="java.util.HashSet" target="java.lang.Cloneable">
+      <point x="17.125" y="-32.0" />
+      <point x="539.5559782608696" y="476.0" />
+      <point x="584.6173913043478" y="476.0" />
+      <point x="0.0" y="32.0" />
+    </edge>
+    <edge source="java.util.LinkedHashSet" target="java.util.Set">
+      <point x="-75.75" y="-32.0" />
+      <point x="196.7028985507245" y="620.0" />
+      <point x="0.0" y="620.0" />
+      <point x="0.0" y="312.0" />
+      <point x="576.6809782608696" y="312.0" />
+      <point x="-35.25" y="32.0" />
+    </edge>
+    <edge source="java.util.SortedSet" target="java.util.Set">
+      <point x="0.0" y="-32.0" />
+      <point x="763.6173913043478" y="322.0" />
+      <point x="623.6809782608696" y="322.0" />
+      <point x="11.75" y="32.0" />
+    </edge>
+    <edge source="java.util.NavigableSet" target="java.util.SortedSet">
+      <point x="0.0" y="-32.0" />
+      <point x="0.0" y="32.0" />
+    </edge>
+    <edge source="java.util.TreeSet" target="java.lang.Cloneable">
+      <point x="-17.125" y="-32.0" />
+      <point x="703.8028985507245" y="590.0" />
+      <point x="624.9798913043478" y="590.0" />
+      <point x="624.9798913043478" y="476.0" />
+      <point x="648.2173913043478" y="476.0" />
+      <point x="63.60000000000002" y="32.0" />
+    </edge>
+    <edge source="java.util.Set" target="java.util.Collection">
+      <point x="0.0" y="-32.0" />
+      <point x="611.9309782608696" y="203.0" />
+      <point x="692.5559782608696" y="203.0" />
+      <point x="-42.5" y="32.0" />
+    </edge>
+    <edge source="java.util.HashMap" target="java.lang.Cloneable">
+      <point x="45.66666666666663" y="-32.0" />
+      <point x="254.09764492753618" y="456.0" />
+      <point x="521.0173913043477" y="456.0" />
+      <point x="-63.60000000000002" y="32.0" />
+    </edge>
+    <edge source="java.util.TreeSet" target="java.io.Serializable">
+      <point x="-51.375" y="-32.0" />
+      <point x="669.5528985507245" y="600.0" />
+      <point x="92.14148550724627" y="600.0" />
+      <point x="92.14148550724627" y="486.0" />
+      <point x="103.30815217391296" y="486.0" />
+      <point x="-38.19999999999999" y="32.0" />
+    </edge>
+    <edge source="java.util.Collection" target="java.lang.Iterable">
+      <point x="0.0" y="-32.0" />
+      <point x="0.0" y="32.0" />
+    </edge>
+    <edge source="java.util.AbstractCollection" target="java.util.Collection">
+      <point x="0.0" y="-32.0" />
+      <point x="998.1173913043478" y="203.0" />
+      <point x="777.5559782608696" y="203.0" />
+      <point x="42.5" y="32.0" />
+    </edge>
+    <edge source="java.util.AbstractSet" target="java.util.AbstractCollection">
+      <point x="45.0" y="-32.0" />
+      <point x="0.0" y="32.0" />
+    </edge>
+    <edge source="java.util.HashSet" target="java.util.AbstractSet">
+      <point x="51.375" y="-32.0" />
+      <point x="573.8059782608696" y="486.0" />
+      <point x="908.1173913043478" y="486.0" />
+      <point x="-45.0" y="32.0" />
+    </edge>
+    <edge source="java.util.TreeMap" target="java.io.Serializable">
+      <point x="-45.66666666666663" y="-32.0" />
+      <point x="319.7643115942029" y="436.0" />
+      <point x="179.70815217391288" y="436.0" />
+      <point x="38.19999999999993" y="32.0" />
+    </edge>
+    <edge source="java.util.TreeSet" target="java.util.AbstractSet">
+      <point x="51.37500000000003" y="-32.0" />
+      <point x="772.3028985507245" y="620.0" />
+      <point x="998.1173913043478" y="620.0" />
+      <point x="45.0" y="32.0" />
+    </edge>
+    <edge source="java.util.TreeMap" target="java.lang.Cloneable">
+      <point x="45.66666666666663" y="-32.0" />
+      <point x="411.0976449275362" y="466.0" />
+      <point x="552.8173913043479" y="466.0" />
+      <point x="-31.799999999999955" y="32.0" />
+    </edge>
+    <edge source="java.util.LinkedHashSet" target="java.io.Serializable">
+      <point x="-25.25" y="-32.0" />
+      <point x="247.2028985507245" y="610.0" />
+      <point x="59.233333333333235" y="610.0" />
+      <point x="59.233333333333235" y="486.0" />
+      <point x="65.10815217391297" y="486.0" />
+      <point x="-76.39999999999998" y="32.0" />
+    </edge>
+    <edge source="java.util.TreeSet" target="java.util.NavigableSet">
+      <point x="17.125" y="-32.0" />
+      <point x="738.0528985507245" y="620.0" />
+      <point x="763.6173913043478" y="620.0" />
+      <point x="0.0" y="32.0" />
+    </edge>
+    <edge source="java.util.HashMap" target="java.io.Serializable">
+      <point x="-45.66666666666663" y="-32.0" />
+      <point x="162.76431159420292" y="486.0" />
+      <point x="141.50815217391295" y="486.0" />
+      <point x="0.0" y="32.0" />
+    </edge>
+    <edge source="java.util.AbstractSet" target="java.util.Set">
+      <point x="-45.0" y="-32.0" />
+      <point x="908.1173913043478" y="312.0" />
+      <point x="647.1809782608696" y="312.0" />
+      <point x="35.25" y="32.0" />
+    </edge>
+    <edge source="java.util.LinkedHashSet" target="java.util.HashSet">
+      <point x="25.25" y="-32.0" />
+      <point x="297.7028985507245" y="610.0" />
+      <point x="522.4309782608696" y="610.0" />
+      <point x="0.0" y="32.0" />
+    </edge>
+    <edge source="java.util.HashSet" target="java.io.Serializable">
+      <point x="-51.375" y="-32.0" />
+      <point x="471.05597826086955" y="426.0" />
+      <point x="217.90815217391292" y="426.0" />
+      <point x="76.39999999999998" y="32.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9046961325966851" x="563.5" y="352.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

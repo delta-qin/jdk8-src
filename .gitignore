@@ -1,0 +1,11 @@
+/gc.log
+/my-jdk8-src/
+/my-jdk7-src/
+/lib/
+/.idea/
+/target/
+/out/
+/OpenJDK8-master/
+/jdk8-src.iml
+/OpenJDK8-master.zip
+/test.data
