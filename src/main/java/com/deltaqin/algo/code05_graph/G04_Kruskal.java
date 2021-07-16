@@ -1,7 +1,8 @@
 package com.deltaqin.algo.code05_graph;
 
-import com.deltaqin.code05_graph.structure.Edge;
-import com.deltaqin.code05_graph.structure.Node;
+
+import com.deltaqin.algo.code05_graph.structure.Edge;
+import com.deltaqin.algo.code05_graph.structure.Node;
 
 import java.util.ArrayList;
 import java.util.Comparator;

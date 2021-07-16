@@ -1,4 +1,4 @@
-package com.deltaqin.socket;
+package com.deltaqin.socket.s00;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
