@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class DIYQueueDemo {
 
-  private final static Queue<String> queue = new DIYQueue<>();
+  private final static Queue<String> queue = new DIYLinkedBlockingQueue<>();
 
   class Product implements Runnable{
     private final String message;

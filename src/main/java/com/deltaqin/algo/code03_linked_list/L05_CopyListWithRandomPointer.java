@@ -22,7 +22,7 @@ public class L05_CopyListWithRandomPointer {
 
 //    借助map来实现
     public static Node copy(Node head) {
-//        map的k是当前链表的节点，map的v是待连接链表的节点
+        // map的k是当前链表的节点，map的v是待连接链表的节点
         HashMap<Node, Node> map = new HashMap<>();
         Node cur = head;
         while (cur != null) {

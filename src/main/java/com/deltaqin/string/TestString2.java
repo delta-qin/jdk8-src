@@ -1,5 +1,7 @@
 package com.deltaqin.string;
 
+import org.junit.Test;
+
 public class TestString2 {
 //    public static void main(String[] args) { // args[0] "abc", args[1] "abc"
 //        String s1 = "a";
@@ -28,5 +30,12 @@ public class TestString2 {
 
         // 现在s3和s4都是使用的是在堆里面的引用，所以相等
         System.out.println(s3 == s4);
+    }
+
+    @Test
+    public void test() {
+        String s1 = "Hello"; String s2 = new StringBuffer("He").append("llo").toString(); String s3 = s2.intern();
+        System.out.println("s1 == s2? " + (s1 == s2)); // false
+        System.out.println("s1 == s3? " + (s1 == s3)); // true
     }
 }

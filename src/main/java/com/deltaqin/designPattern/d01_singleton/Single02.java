@@ -31,7 +31,7 @@ public class Single02 implements Serializable {
                 e.printStackTrace();
             }
 
-            //instance = new Single02();
+            // instance = new Single02();
 
             // 使用类锁，保证唯一
             synchronized (Single02.class ) {

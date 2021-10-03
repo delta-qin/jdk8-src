@@ -12,6 +12,8 @@ import java.util.HashMap;
  * 为什么双向链表要保存Node，而不直接保存val，key已经在map里面有了，
  * 注意通过LRU链表找到要删除的最后一个删除map的时候要知道key是谁，所以有必要维护ke的信息
  *
+ * 注意添加新值的时候，key和原来一样的时候，需要删除map里面的kv，重新设置到map里面，
+ * 而不是直接设置在链表里面最后加一个node就结束了，这样map里面的key指向的node 和在链表的里面的node不是同一个，
  */
 // LRU 本来就是为了存放KV的
 public class L07_Custom_LRU {

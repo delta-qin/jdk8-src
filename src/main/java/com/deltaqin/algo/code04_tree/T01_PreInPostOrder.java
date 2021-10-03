@@ -8,6 +8,46 @@ import java.util.Stack;
  */
 public class T01_PreInPostOrder {
 
+    static class Node1 {
+        int val;
+        Node1 left;
+        Node1 right;
+        Node1(int val) {
+            val = val;
+        }
+    }
+
+    public void preOrder1(Node1 root) {
+        if (root == null) {
+            return;
+        }
+
+        System.out.println(root.val + " ");
+        preOrder1(root.left);
+        preOrder1(root.right);
+
+    }
+
+    public static void inOrder1(Node1 root) {
+        if (root == null) {
+            return;
+        }
+
+        inOrder1(root.left);
+        System.out.println(root.val + " ");
+        inOrder1(root.right);
+    }
+
+    public static void postOrder1 (Node1 root) {
+        if (root == null) {
+            return;
+        }
+
+        postOrder1(root.left);
+        postOrder1(root.right);
+        System.out.println(root.val  + " ");
+    }
+
     public static class Node {
         public int value;
         public Node left;
@@ -50,6 +90,25 @@ public class T01_PreInPostOrder {
     }
 
 
+    public void preOrder2(Node1 root) {
+        if (root == null) {
+            return;
+        }
+        Stack<Node1> s = new Stack<>();
+        s.push(root);
+        while (!s.isEmpty()) {
+            Node1 top = s.pop();
+            System.out.println(top.val + " ");
+            if (top.right != null) {
+                s.push(top.right);
+            }
+            if (top.left != null) {
+                s.push(top.left);
+            }
+        }
+    }
+
+
 //    非递归实现
 
     //    使用一个栈就可以实现先序遍历，先压右再压入左即可
@@ -75,6 +134,23 @@ public class T01_PreInPostOrder {
         }
     }
 
+
+    public static void InOrder2(Node1 root) {
+        if (root == null) {
+            return;
+        }
+        Stack<Node1> stack = new Stack<>();
+        while (!stack.isEmpty() || root != null) {
+            if (root != null) {
+                stack.push(root);
+                root = root.left;
+            } else {
+                Node1 node = stack.pop();
+                System.out.println(node.val + " ");
+                root = node.right;
+            }
+        }
+    }
     //    较难理解
     public static void inOrderUnRecursion(Node root) {
         if (root == null) return;

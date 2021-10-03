@@ -9,7 +9,7 @@ public class MyMessageEncoder extends MessageToByteEncoder<MyMessageProtocol> {
     protected void encode(ChannelHandlerContext ctx, MyMessageProtocol msg, ByteBuf out) throws Exception {
         System.out.println("MyMessageEncoder encode 方法被调用");
         out.writeInt(msg.getLen());
-        out.writeInt(msg.getLen());
+        //out.writeInt(msg.getLen());
         out.writeBytes(msg.getContent());
     }
 }

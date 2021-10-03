@@ -38,17 +38,18 @@ public class NioSelectorServer {
             Iterator<SelectionKey> iterator = selectionKeys.iterator();
 
             // 遍历SelectionKey对事件进行处理
+            // 是非阻塞的，即使返回也可能是空的
             while (iterator.hasNext()) {
                 SelectionKey key = iterator.next();
                 // 如果是OP_ACCEPT事件，则进行连接获取和事件注册
                 if (key.isAcceptable()) {
-                    ServerSocketChannel server = (ServerSocketChannel) key.channel();
+                    ServerSocketChannel serverSocketChannel = (ServerSocketChannel) key.channel();
                     // 没有accept的时候是在全连接队列的，这个socket还没有取出来
-                    SocketChannel socketChannel = server.accept();
+                    SocketChannel socketChannel = serverSocketChannel.accept();
                     // 取出来这个socket
                     socketChannel.configureBlocking(false);
                     // 这里只注册了读事件，如果需要给客户端发送数据可以注册写事件
-                    SelectionKey selKey = socketChannel.register(selector, SelectionKey.OP_READ);
+                    socketChannel.register(selector, SelectionKey.OP_READ);
                     System.out.println("客户端连接成功");
                 } else if (key.isReadable()) {  // 如果是OP_READ事件，则进行读取和打印
                     SocketChannel socketChannel = (SocketChannel) key.channel();

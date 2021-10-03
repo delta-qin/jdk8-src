@@ -24,6 +24,7 @@ public class Single03 {
             throw  new RuntimeException("反射攻击");
         }
     }
+
     public static Single03 getInstance() {
         return Single.instance;
     }
