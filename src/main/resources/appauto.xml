@@ -18,8 +18,8 @@
 
     <aop:aspectj-autoproxy/>
 
-    <bean id="tank" class="com.deltaqin.designPattern.d08_proxy.aopauto.Tank"/>
-    <bean id="timeProxy" class="com.deltaqin.designPattern.d08_proxy.aopauto.TimeProxy"/>
+    <bean id="tank" class="com.deltaqin.p08designPattern.d08_proxy.aopauto.Tank"/>
+    <bean id="timeProxy" class="com.deltaqin.p08designPattern.d08_proxy.aopauto.TimeProxy"/>
 
 <!--    <aop:config>-->
 <!--        <aop:aspect id="time" ref="timeProxy">-->
