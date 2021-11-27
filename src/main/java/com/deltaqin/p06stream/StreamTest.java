@@ -42,11 +42,13 @@ public class StreamTest {
         System.out.println(collect2);
 
         // 转换中出现相同的，如何处理
+        // Collectors.toMap
         Map<Integer, Integer> collect = list.stream()
                                        .collect(Collectors.toMap(DO::getId, DO::getCount, (a, b) -> b));
         System.out.println(collect.toString());
 
         // 保存相同的
+        // Collectors.groupingBy
         Map<Integer, List<DO>> collect3 = list.stream().collect(Collectors.groupingBy(DO::getId));
         System.out.println(collect3);
     }

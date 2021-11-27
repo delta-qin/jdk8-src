@@ -1,5 +1,8 @@
 package com.deltaqin.p06lamda;
 
+import lombok.Data;
+
+@Data
 public class Person implements Comparable{
     private String name;
     private Integer age;
