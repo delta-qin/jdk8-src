@@ -7,31 +7,27 @@ package com.deltaqin.p02enumerate;
 public class SeasonTest1 {
     public static void main(String[] args) {
         Season1 summer = Season1.SUMMER;
+//        System.out.println(summer.ordinal());
         //toString():返回枚举类对象的名称
-        System.out.println(summer.toString()); // SUMMER
-        System.out.println(Season1.class.getSuperclass()); // class java.lang.Enum
-        System.out.println("****************");
-
-        //values():返回所有的枚举类对象构成的数组
-        Season1[] values = Season1.values();
-        for(int i = 0;i < values.length;i++){
-            System.out.println(values[i]);
-            values[i].show();
-        }
-        System.out.println("****************");
-
-        // 一共有6种线程状态
-        Thread.State[] values1 = Thread.State.values();
-        for (int i = 0; i < values1.length; i++) {
-            System.out.println(values1[i]);
-        }
-
-        //valueOf(String objName):返回枚举类中对象名是objName的对象。
-        Season1 winter = Season1.valueOf("WINTER");
-        //如果没有objName的枚举类对象，则抛异常：IllegalArgumentException
-//        Season1 winter = Season1.valueOf("WINTER1");
-        System.out.println(winter);
-        winter.show();
+//        System.out.println(summer.toString()); // SUMMER
+//        System.out.println(Season1.class.getSuperclass()); // class java.lang.Enum
+//        //values():返回所有的枚举类对象构成的数组
+//        Season1[] values = Season1.values();
+//        for(int i = 0;i < values.length;i++){
+//            System.out.println(values[i]);
+//            values[i].show();
+//        }
+        //        // 一共有6种线程状态
+        //        Thread.State[] values1 = Thread.State.values();
+        //        for (int i = 0; i < values1.length; i++) {
+        //            System.out.println(values1[i]);
+        //        }
+//        //valueOf(String objName):返回枚举类中对象名是objName的对象。
+//        Season1 winter = Season1.valueOf("WINTER");
+//        //如果没有objName的枚举类对象，则抛异常：IllegalArgumentException
+////        Season1 winter = Season1.valueOf("WINTER1");
+//        System.out.println(winter);
+//        winter.show();
     }
 }
 
@@ -86,15 +82,15 @@ enum Season1 implements Info{
     public String getSeasonDesc() {
         return seasonDesc;
     }
-//    //4.其他诉求1：提供toString()
-//
-//    @Override
-//    public String toString() {
-//        return "Season1{" +
-//                "seasonName='" + seasonName + '\'' +
-//                ", seasonDesc='" + seasonDesc + '\'' +
-//                '}';
-//    }
+    //4.其他诉求1：提供toString()
+
+    @Override
+    public String toString() {
+        return "Season1{" +
+                "seasonName='" + seasonName + '\'' +
+                ", seasonDesc='" + seasonDesc + '\'' +
+                '}';
+    }
 
 
     @Override
