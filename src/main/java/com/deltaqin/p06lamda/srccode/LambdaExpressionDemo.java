@@ -153,7 +153,7 @@ public class LambdaExpressionDemo {
     @Test
     public void testMapToInt() {
         List<Integer> ids = students.stream()
-                .mapToInt(s -> Integer.valueOf(s.getId() + ""))
+                .mapToInt(s -> Integer.parseInt(s.getId() + ""))
                 // 一定要有 mapToObj，因为 mapToInt 返回的是 IntStream，因为已经确定是 int 类型了
                 // 所有没有泛型的，而 Collectors.toList() 强制要求有泛型的流，所以需要使用 mapToObj
                 // 方法返回有泛型的流

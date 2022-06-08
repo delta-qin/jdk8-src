@@ -42,9 +42,7 @@ class DFS_Trie {
                 find(board, i, j,  tree, res, visited);
             }
         }
-        List<String> list = new ArrayList<>();
-        list.addAll(res);
-        return list;
+        return new ArrayList<>(res);
     }
 
     // DFS :要遍历的格子，坐标ij，是否遍历过， 当前的位置，树，结果集，
@@ -74,7 +72,7 @@ class DFS_Trie {
     }
 
 
-    public class Trie {
+    public static class Trie {
         String word;
         Trie nexts[];
 
